@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Open+Sans|Roboto:100,300,400,500" rel="stylesheet">
+
+    </head>
+
+    <body>
+      <style type="text/css">
+        .banner{
+            background: url("banner-new.jpg");
+            background-size:cover;
+            padding:300px 0px;
+        }
+        .my-container{
+            padding:3rem;
+            margin-top:-21rem;
+            margin-bottom:-21rem;
+        }
+        .my-container1{
+            padding:2rem;
+            margin-bottom:-2rem;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .font-style-maximus{
+            letter-spacing: 2px;
+            font-weight: 100;
+        }
+        .hover-links{
+            color:#eaeaea;
+        }
+        .hover-links:hover{
+            color:#fff;
+        }
+        .title{
+            color:#fff;
+            letter-spacing:1px;
+            margin-top:10rem;
+            margin-bottom:2rem;
+            text-align:left;
+            font-weight:300;
+        }
+        .title1{
+            color:#fff;
+            letter-spacing:5px;
+            text-align:left;
+        }
+        .head1{
+            font-family: 'Roboto', sans-serif;
+        }
+        #image {
+		position: relative;
+        }
+        #content {
+		width: 100%;
+		background-color:#fff;
+		position: relative;
+		z-index: 1;
+	    }
+        .caurosel{
+            background:url("img/caurosel.jpg") no-repeat;
+            background-size:cover;
+            width:100%;
+        }
+        .cover{
+            background-color:#000;
+            opacity:.5;
+            z-index:10;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+        }
+        h4{
+            font-family: 'Open Sans', sans-serif;
+        }
+        .style-maximus{
+            background: url("img/banner2.jpg");
+            background-size:cover;
+            width:100%;
+        }
+        .mybtn{
+            background:#23cf5f;
+            border-radius:50px;
+            color:#fff !important;
+            width: 200px;
+            letter-spacing: 4px;
+            height: 50px;
+        }
+        .mybtn:hover{
+            background:#1bb350 !important;
+            border-radius:50px;
+            color:#fff !important;
+            width: 200px;
+            letter-spacing: 4px;
+            height: 50px;
+        }
+        .mybtn:focus{
+            background:#23cf5f;
+            border-radius:50px;
+            color:#fff !important;
+            width: 200px;
+            letter-spacing: 4px;
+            height: 50px;
+        }
+        .mybtn1{
+            background:#23cf5f;
+            border-radius:5px;
+            color:#fff !important;
+            width: 125px;
+            letter-spacing: 2px;
+            height: 45px;
+            font-size:1rem;
+            font-weight:300;
+        }
+        .mybtn1:hover{
+            background:#1bb350 !important;
+            border-radius:5px;
+            color:#fff !important;
+            width: 125px;
+            letter-spacing: 2px;
+            height: 45px;
+            font-size:1rem;
+            font-weight:300;
+        }
+        .mybtn1:focus{
+            background:#23cf5f;
+            border-radius:5px;
+            color:#fff !important;
+            width: 125px;
+            letter-spacing: 2px;
+            height: 45px;
+            font-size:1rem;
+            font-weight:300;
+        }
+        .nav-style{
+            background:transparent;
+            box-shadow:none;
+        }
+    </style>
+    <script type="text/javascript">
+	var ypos,image;
+	function parallex() {
+		image = document.getElementById('image');
+		ypos = window.pageYOffset;
+		image.style.top = ypos * .2+ 'px';
+	}
+	window.addEventListener('scroll', parallex),false;
+
+    </script>
+    <script type="text/javascript">
+        var a = $(".nav-style").offset().top;
+
+        $(document).scroll(function(){
+            if($(this).scrollTop() > a)
+            {   
+            $('.nav-style').css({"background":"red"});
+            } else {
+            $('.nav-style').css({"background":"transparent"});
+            }
+        });
+    </script>
+      <!--Import jQuery before materialize.js-->
+
+
+      <!--project starts here-->
+
+      <div id="image" class="banner section">
+          <div class="my-container">
+              <nav class="nav-style">
+                <div class="nav-wrapper">
+                <img href="#!" class="brand-logo" src="img/logo.png" style="height:90%">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="" class="hover-links font-style-maximus">Home</a></li>
+                    <li><a href="" class="hover-links font-style-maximus">Services</a></li>
+                    <li><a href="" class="hover-links font-style-maximus">Team</a></li>
+                    <li><a href="" class="hover-links font-style-maximus">About Us</a></li>
+                    <li><a href="" class="hover-links font-style-maximus">Contact</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo" style="text-align:center;">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><button href="" class="btn-flat mybtn1">TEXT US</button></li>
+                </ul>
+                </div>
+            </nav>
+            <div class="col s6">
+              <h1 class="title">A New face to </br>Creativity</h1>
+              <h6 class="title1">MAX OUT YOUR SKILLS</h6>
+          </div>
+          </div>
+          
+      </div>
+    
+      <div id="content">
+          <div class="row">
+              
+              <div class="col s12 m12 l6" style="background:#fff;padding:0rem 0rem;">
+                  <div class="container" style="padding:1rem;padding-top:3rem;padding-left:1rem;">
+                    <h4 style="font-weight: 300;margin-top: 2rem;">Our Success Policy</h4>
+                    <p style="line-height: 1.8;margin-top: 2rem;font-size: 15px;margin-bottom: 3rem;font-weight: 300;color:#828282;">Every team members embodies our motto, "Simple, Unique , Great" within themselves so that, they can stay simpleand down to earth, Develop something Unique & innovative and achieve something really great and useful.</p>
+                  </div>
+              </div>
+              <div class="col s12 m12 l6" style="background:#fff;padding:0rem 0rem;">
+                  <img src="img/caurosel.jpg" style="width:100%;margin-bottom:-25px;">
+              </div>
+              </div>
+          </div>
+      </div>
+
+      
+          <div class="section"  style="background:#f5f5f5;padding:1rem;margin-bottom:-15px;">
+               <h4 style="color:#949494;text-align:center;letter-spacing:8px;font-weight:300;margin-top:3rem;font-family: sans-serif;">OUR FEATURES</h4>
+              <p style="color:#949494;text-align:center;letter-spacing:3px;font-weight:300;font-size:10px;margin-bottom:1rem;">A BRAND NEW USER EXPERIENCE & UNIQUENESS</p>
+              <div class="my-container1">
+             
+                <div class="row">
+                    
+                    <div class="col s12 m6 l3" style="text-align:center;color:#949494;margin-top:1rem;">
+                        <i class="small material-icons" style="font-size:30px;">perm_identity</i>  
+                        <h6 style="font-size:20px;font-weight:300;">CUSTOMER-ORIENTED</h6>  
+                        <p style="line-height: 1.8;margin-top: 2rem;font-size: 15px;margin-bottom: 3rem;font-weight: 300;">Ideas of clients are the most important and we give the most preference to them.</p>
+                    </div>
+                    <div class="col s12 m6 l3" style="text-align:center;color:#949494;margin-top:1rem;">
+                        <i class="small material-icons" style="font-size:30px;">settings</i>  
+                        <h6 style="font-size:20px;font-weight:300;">PERFORMANCE</h6>  
+                        <p style="line-height: 1.8;margin-top: 2rem;font-size: 15px;margin-bottom: 3rem;font-weight: 300;">Our design work on almost all platforms and they perform well in mobile and desktop devices.</p>
+                    </div>
+                    <div class="col s12 m6 l3" style="text-align:center;color:#949494;margin-top:1rem;">
+                        <i class="small material-icons" style="font-size:30px;">language</i>  
+                        <h6 style="font-size:20px;font-weight:300;">NETWORK</h6>  
+                        <p style="line-height: 1.8;margin-top: 2rem;font-size: 15px;margin-bottom: 3rem;font-weight: 300;">We are connected with the best businesses in town. We insist on trust and an open communication with our clients</p>
+                    </div>
+                    <div class="col s12 m6 l3" style="text-align:center;color:#949494;margin-top:1rem;">
+                        <i class="small material-icons" style="font-size:30px;">chat_bubble</i>  
+                        <h6 style="font-size:20px;font-weight:300;">SUPPORT</h6>  
+                        <p style="line-height: 1.8;margin-top: 2rem;font-size: 15px;margin-bottom: 3rem;font-weight: 300;">We extend you our support through out the progress of your business</p>
+                    </div>
+
+                </div>
+              </div>
+          </div>
+      
+      <div class="section style-maximus" style="text-align:center;">
+          <div class="container" style="padding:0rem;margin-top:6rem;margin-bottom:6rem;">
+          <h4 style="color:#fff;text-align:center;letter-spacing:8px;font-weight:300;font-family: sans-serif;">STYLE AT MAXIMUS</h4>
+          <p style="color:#fff;line-height: 2.3;margin-top: 2rem;font-size: 15px;margin-bottom: 3rem;font-weight: 300;">Simplicity. Its the best way we could define ourselves. Everyone at Maximus are Simple and Unique.
+            And we thoroughly believe that we could be the No.1 Being Simple. Everyone Respect others as their 
+            co-operation is very much valued.And we also strongly believe that Hard work is the Key to all Success. 
+            Its our Hard work that had taken us all this way along. We all are very much happy to work Hard, 
+            so that we could get a good result..!</p>
+          </div>
+      </div>
+
+      <div class="section" style="background:#fafafa;"> 
+        <div class="container" style="text-align:center;padding:2rem;color:#23cf5f;">
+            <div class="row" style="margin-top: 3rem;margin-bottom: 3rem;">
+            <div class="col s12 m12 l12">
+            <p style="letter-spacing:0px">got any work for us</p>
+            </div>
+            <div class="col s12 m12 l12">
+            <h4 style="letter-spacing: 3px;color:#424242;font-size: 45px;margin-top:2rem;margin-bottom:2rem;">GET STARTED !</h4>
+            </div>
+            <div class="col s12 m12 l12">
+            <button class="btn-flat mybtn">TEXT US</button>
+            </div>
+            </div>
+        </div>          
+      </div>
+
+      <div class="section" style="background:#474747;">
+          <div class="container" style="padding:2rem;text-align:center;color:#fafafa">
+              <p style="letter-spacing:4px;">with</p>
+              <i class="material-icons">favorite_border</br></i>
+              <p style="font-size: 20px;font-family: sans-serif;font-weight: 100;letter-spacing: 20px;">MAXIMUS</p>
+              <hr style="width: 94%;opacity: 0.2;margin-top: 3rem;margin-bottom:1.5rem;">
+              <div class="row" style="width: 70%;padding: 0rem;margin: 0 auto;">
+                  <div class="col s6 m3 l3">
+                      <a href="" class="hover-links font-style-maximus"><p>Facebook</p></a>
+                  </div>
+                  <div class="col s6 m3 l3">
+                      <a href="" class="hover-links font-style-maximus"><p>Twitter</p></a>
+                  </div>
+                  <div class="col s6 m3 l3">
+                      <a href="" class="hover-links font-style-maximus"><p>Google+</p></a>
+                  </div>
+                  <div class="col s6 m3 l3">
+                      <a href="" class="hover-links font-style-maximus"><p>YouTube</p></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="section" style="background:#303030;margin-top:-1.5rem;">
+          <p style="color:#fff;text-align:center">© 2016 All rights reserved | Designed & Developed by Maximus</p>
+      </div>
+
+
+      <!--project Ends here-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+          $( document ).ready(function(){
+                  $(".button-collapse").sideNav();
+          });
+      </script>
+    </body>
+</html>
